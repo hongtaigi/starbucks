@@ -33,6 +33,7 @@
   구글에서 제공하는 머터리얼 아이콘을 무료로 사용할 수 있습니다. -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
 
+  <link rel="stylesheet" href="./css/common.css"/>
   <link rel="stylesheet" href="./css/main.css"/>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js" integrity="sha512-WFN04846sdKMIP5LKNphMaWzU7YpMyCU245etK3g/2ARYbPK9Ub18eG+ljU96qKRCWh+quCY7yefSmlkQw1ANQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -56,6 +57,7 @@
   <!-- youtube -->
   <script defer src="./js/youtube.js"></script>
   
+  <script defer src="./js/common.js"></script>
   <script defer src="./js/main.js"></script>  <!-- defer : html의 구조가 모두 해석이 되면 그때 main.js가 동작하도록 하는 옵션 -->
 </head>
 <body>
@@ -74,6 +76,7 @@
       <!-- sub menu -->
       <div class="sub-menu">
         <ul class="menu">
+          <!-- <a href="도메인/signin/index.html"></a> 과 같다.. 맨앞 '/' 는 도메인 생략 , '/파일' 이 없으면 '/index.html' 이 생략 된 것으로 인식 -->
           <li><a href="/signin">Sign In</a></li>
           <li><a href="#">My Starbucks</a></li> <!-- hash 입력으로 이동페이지 아직 작성전일경우 이동하지 않게 처리 -->
           <li><a href="javascript:void(0)">customer Service & Ideas</a></li><!-- 클릭 하였을때 자바스크립트로 아무일도 하지 않음을 정의  ~~ hash 입력 보다 권장 -->
