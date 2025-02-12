@@ -1,5 +1,7 @@
-console.log('JS');
-
+/*****************************************************************************************
+ * 
+ * common.js 로 분리 작성 하였음.
+ * 
 // document >> html 을 의미
 // window   >> 브라우저의 tab 을 의미
 
@@ -28,6 +30,13 @@ searchInputEl.addEventListener('blur', function () {
   searchInputEl.setAttribute('placeholder', '');
   searchInputEl.value = '';
 });
+
+
+// copyright 부분에 년도구해서 넣기
+const thisYear = document.querySelector('.this-year');
+thisYear.textContent = new Date().getFullYear();
+
+*******************************************************************************************/
 
 
 
@@ -229,6 +238,3 @@ spyEls.forEach(function (spyEl) {
 });
 
 
-// copyright 부분에 년도구해서 넣기
-const thisYear = document.querySelector('.this-year');
-thisYear.textContent = new Date().getFullYear();
